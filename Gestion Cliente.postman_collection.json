@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "c335305f-5dce-4e14-8f91-7136b66b24ce",
+		"name": "Gestion Cliente",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37179201"
+	},
+	"item": [
+		{
+			"name": "ADD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"persona\": {\r\n        \"nombre\": \"Juan Osorio\",\r\n        \"genero\": \"Femenino\",\r\n        \"edad\": 25,\r\n        \"identificacion\": \"123456789\",\r\n        \"direccion\": \"13 junio y Equinoccial\",\r\n        \"telefono\": \"098874587\"\r\n    },\r\n    \"contrasena\": \"1245\",\r\n    \"estado\": \"True\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:8080/clientes/create"
+			},
+			"response": []
+		},
+		{
+			"name": "GET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": ""
+			},
+			"response": []
+		},
+		{
+			"name": "ELIM",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:8080/clientes/2"
+			},
+			"response": []
+		}
+	]
+}

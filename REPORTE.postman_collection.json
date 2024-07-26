@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "231122e2-dd7b-4d54-9030-9493cd8a08db",
+		"name": "REPORTE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37179201"
+	},
+	"item": [
+		{
+			"name": "REPORTE USAR ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "REPORTE RANGO FECHA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/reportes/fecha?fdesde=22/07/2024&fhasta=25/07/2024",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"reportes",
+						"fecha"
+					],
+					"query": [
+						{
+							"key": "fdesde",
+							"value": "22/07/2024"
+						},
+						{
+							"key": "fhasta",
+							"value": "25/07/2024"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

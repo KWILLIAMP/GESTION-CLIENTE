@@ -1,0 +1,28 @@
+{
+	"info": {
+		"_postman_id": "5a24eb19-c671-44cf-821d-372f3d9f451b",
+		"name": "Gestion TRX",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37179201"
+	},
+	"item": [
+		{
+			"name": "Nuevo Mov",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCuenta\": \"4\",\r\n    \"tipoMovimiento\": \"Corriente\",\r\n    \"saldo\": 100,\r\n    \"estado\": true,\r\n    \"valor\": 600, \r\n    \"fecha\": \"2024-07-23\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:9090/movimientos/create"
+			},
+			"response": []
+		}
+	]
+}
